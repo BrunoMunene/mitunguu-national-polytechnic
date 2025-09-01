@@ -1,0 +1,18 @@
+/* File: src/index.css */
+/* Tailwind base import */
+/* If not using Tailwind's build process, import the compiled Tailwind CSS instead */
+/* Example: */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css');
+
+/* Custom overrides if needed */
+
+/* Focus styles for accessibility */
+:focus {
+  outline-offset: 2px;
+  outline-color: #3b82f6; /* Tailwind blue-500 */
+  outline-style: solid;
+}
+
+/* Additional styles... */
+
+/* Responsive adjustments can be handled mostly by Tailwind utilities */

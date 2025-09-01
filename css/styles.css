@@ -1,0 +1,5 @@
+
+/* Additional behaviors and focus styles */
+:focus { outline-offset: 2px; outline-color: #3b82f6; outline-style: solid; }
+/* Submenu transition for mobile */
+.submenu { transition: max-height 0.3s ease; }

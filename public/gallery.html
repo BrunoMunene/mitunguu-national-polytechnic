@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Mitunguu National Polytechnic</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header / Nav -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <a href="index.html" class="flex items-center space-x-3" aria-label="Mitunguu National Polytechnic">
+        <div class="bg-white text-blue-900 font-bold rounded-full w-10 h-10 flex items-center justify-center">MNP</div>
+        <span class="text-lg font-semibold tracking-wide">Mitunguu National Polytechnic</span>
+      </a>
+      <nav class="hidden md:flex space-x-6" aria-label="Primary navigation">
+        <a href="index.html" class="py-3 inline-block hover:text-blue-300">Home</a>
+        <div class="relative group">
+          <button class="py-3 inline-flex items-center hover:text-blue-300">About Us
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow mt-1">
+            <li><a href="about.html#vision" class="block px-4 py-2 hover:bg-blue-100">Vision &amp; Mission</a></li>
+            <li><a href="about.html#history" class="block px-4 py-2 hover:bg-blue-100">History</a></li>
+            <li><a href="about.html#values" class="block px-4 py-2 hover:bg-blue-100">Core Values</a></li>
+            <li><a href="about.html#leadership" class="block px-4 py-2 hover:bg-blue-100">Leadership</a></li>
+          </ul>
+        </div>
+        <div class="relative group">
+          <button class="py-3 inline-flex items-center hover:text-blue-300">Academics
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow mt-1">
+            <li><a href="academics.html#courses" class="block px-4 py-2 hover:bg-blue-100">Courses / Programmes</a></li>
+            <li><a href="academics.html#schools" class="block px-4 py-2 hover:bg-blue-100">Schools &amp; Departments</a></li>
+          </ul>
+        </div>
+        <div class="relative group">
+          <button class="py-3 inline-flex items-center hover:text-blue-300">Admissions
+            <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <ul class="absolute hidden group-hover:block bg-white text-gray-800 rounded shadow mt-1">
+            <li><a href="admissions.html#how-to-apply" class="block px-4 py-2 hover:bg-blue-100">How to Apply</a></li>
+            <li><a href="admissions.html#requirements" class="block px-4 py-2 hover:bg-blue-100">Admission Requirements</a></li>
+            <li><a href="admissions.html#application-form" class="block px-4 py-2 hover:bg-blue-100">Application Form</a></li>
+            <li><a href="admissions.html#fee-structure" class="block px-4 py-2 hover:bg-blue-100">Fee Structure</a></li>
+            <li><a href="admissions.html#kuccps" class="block px-4 py-2 hover:bg-blue-100">KUCCPS Intake</a></li>
+          </ul>
+        </div>
+        <a href="departments.html" class="py-3 inline-block hover:text-blue-300">Departments</a>
+        <a href="news-events.html" class="py-3 inline-block hover:text-blue-300">News &amp; Events</a>
+        <a href="gallery.html" class="py-3 inline-block hover:text-blue-300">Gallery</a>
+        <a href="downloads.html" class="py-3 inline-block hover:text-blue-300">Downloads</a>
+        <a href="contact.html" class="py-3 inline-block hover:text-blue-300">Contact</a>
+      </nav>
+      <button id="mobile-menu-button" aria-label="Open menu" aria-expanded="false" class="md:hidden">
+        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="hidden bg-blue-900 text-white md:hidden" aria-label="Mobile">
+      <ul class="space-y-1 px-4 py-3">
+        <li><a href="index.html" class="block py-2">Home</a></li>
+        <li>
+          <button class="w-full text-left py-2 flex justify-between items-center submenu-toggle">About Us<svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+          <ul class="hidden pl-4 space-y-1 submenu">
+            <li><a href="about.html#vision" class="block py-1">Vision &amp; Mission</a></li>
+            <li><a href="about.html#history" class="block py-1">History</a></li>
+            <li><a href="about.html#values" class="block py-1">Core Values</a></li>
+            <li><a href="about.html#leadership" class="block py-1">Leadership</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="w-full text-left py-2 flex justify-between items-center submenu-toggle">Academics<svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+          <ul class="hidden pl-4 space-y-1 submenu">
+            <li><a href="academics.html#courses" class="block py-1">Courses / Programmes</a></li>
+            <li><a href="academics.html#schools" class="block py-1">Schools &amp; Departments</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="w-full text-left py-2 flex justify-between items-center submenu-toggle">Admissions<svg class="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+          <ul class="hidden pl-4 space-y-1 submenu">
+            <li><a href="admissions.html#how-to-apply" class="block py-1">How to Apply</a></li>
+            <li><a href="admissions.html#requirements" class="block py-1">Admission Requirements</a></li>
+            <li><a href="admissions.html#application-form" class="block py-1">Application Form</a></li>
+            <li><a href="admissions.html#fee-structure" class="block py-1">Fee Structure</a></li>
+            <li><a href="admissions.html#kuccps" class="block py-1">KUCCPS Intake</a></li>
+          </ul>
+        </li>
+        <li><a href="departments.html" class="block py-2">Departments</a></li>
+        <li><a href="news-events.html" class="block py-2">News &amp; Events</a></li>
+        <li><a href="gallery.html" class="block py-2">Gallery</a></li>
+        <li><a href="downloads.html" class="block py-2">Downloads</a></li>
+        <li><a href="contact.html" class="block py-2">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h1 class="text-4xl font-bold text-blue-900 mb-8">Gallery</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <figure class="overflow-hidden rounded-lg shadow-lg"><img src="images/gallery1.jpg" alt="Students in a practical workshop" class="w-full h-48 object-cover" /><figcaption class="p-2 text-sm text-gray-600">Students in a practical workshop</figcaption></figure>
+      <figure class="overflow-hidden rounded-lg shadow-lg"><img src="images/gallery2.jpg" alt="Campus front view" class="w-full h-48 object-cover" /><figcaption class="p-2 text-sm text-gray-600">Campus front view</figcaption></figure>
+      <figure class="overflow-hidden rounded-lg shadow-lg"><img src="images/gallery3.jpg" alt="Library interior" class="w-full h-48 object-cover" /><figcaption class="p-2 text-sm text-gray-600">Library interior</figcaption></figure>
+    </div>
+  </main>
+
+
+  <footer class="bg-blue-900 text-white mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="about.html" class="hover:underline">About Us</a></li>
+          <li><a href="academics.html" class="hover:underline">Academics</a></li>
+          <li><a href="admissions.html" class="hover:underline">Admissions</a></li>
+          <li><a href="departments.html" class="hover:underline">Departments</a></li>
+          <li><a href="news-events.html" class="hover:underline">News &amp; Events</a></li>
+          <li><a href="gallery.html" class="hover:underline">Gallery</a></li>
+          <li><a href="downloads.html" class="hover:underline">Downloads</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Follow Us</h3>
+        <ul class="flex space-x-6">
+          <li><a href="#" aria-label="Facebook" class="hover:text-blue-300">Facebook</a></li>
+          <li><a href="#" aria-label="Twitter" class="hover:text-blue-300">Twitter</a></li>
+          <li><a href="#" aria-label="YouTube" class="hover:text-blue-300">YouTube</a></li>
+          <li><a href="#" aria-label="Instagram" class="hover:text-blue-300">Instagram</a></li>
+          <li><a href="#" aria-label="WhatsApp" class="hover:text-blue-300">WhatsApp</a></li>
+          <li><a href="#" aria-label="LinkedIn" class="hover:text-blue-300">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Contact Info</h3>
+        <address class="not-italic text-gray-300">
+          Mitunguu National Polytechnic<br />
+          P.O Box 12345 - 60123<br />
+          Mitunguu, Kenya<br />
+          Phone: +254 700 000 000<br />
+          Email: <a href="mailto:info@mitunguu.ac.ke" class="underline">info@mitunguu.ac.ke</a>
+        </address>
+      </div>
+    </div>
+    <div class="border-t border-blue-800 text-center py-4 text-sm select-none">© Mitunguu National Polytechnic 2025</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
